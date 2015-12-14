@@ -17,7 +17,7 @@ filter(household, Date == household$Date[67248]) -> Feb_1
 mutate(Feb_1, dt = as.POSIXct(paste(Feb_1$Date, Feb_1$Time), format = "%Y-%m-%d %H:%M:%S")) -> Feb_1
 filter(household, Date == household$Date[68248]) -> Feb_2
 mutate(Feb_2, dt = as.POSIXct(paste(Feb_2$Date, Feb_2$Time), format = "%Y-%m-%d %H:%M:%S")) -> Feb_2
-rbind(Feb_1, Feb_2) -> datasets::
+rbind(Feb_1, Feb_2) -> dataset
 
 png()
 png("plot2.png", width = 480, height = 480)
