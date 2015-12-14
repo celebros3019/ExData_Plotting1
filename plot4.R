@@ -20,7 +20,7 @@ mutate(Feb_2, dt = as.POSIXct(paste(Feb_2$Date, Feb_2$Time), format = "%Y-%m-%d 
 rbind(Feb_1, Feb_2) -> dataset
 
 png()
-png("plot3.png", width = 480, height = 480)
+png("plot4.png", width = 480, height = 480)
 par(mfrow = c(2,2))
 plot(dataset$dt, as.numeric(dataset$Global_active_power), type = "l", ylab = "Global Active Power (kilowatts)", xlab = "")
 plot(dataset$dt, as.numeric(dataset$Voltage), type = "l", ylab = "Voltage", xlab = "datetime")
