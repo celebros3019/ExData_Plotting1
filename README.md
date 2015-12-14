@@ -1,3 +1,9 @@
+## Instructions for use of celebros3019's plotting assignment:
+
+# Make sure dplyr, tidyr, and lubridate are installed
+# Download the zip file into your repository
+# Run the file (or don't, in the case of peer reviewers, since the instructions say not to!)
+
 ## Introduction
 
 This assignment uses data from
