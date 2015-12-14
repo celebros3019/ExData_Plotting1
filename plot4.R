@@ -27,6 +27,6 @@ plot(dataset$dt, as.numeric(dataset$Voltage), type = "l", ylab = "Voltage", xlab
 plot(dataset$dt, as.numeric(dataset$Sub_metering_1), type = "l", col = "black", ylab = "Energy sub metering", xlab = "")
 lines(dataset$dt, as.numeric(dataset$Sub_metering_2), type = "l", col = "red", ylab = "Energy sub metering", xlab = "")
 lines(dataset$dt, as.numeric(dataset$Sub_metering_3), type = "l", col = "blue", ylab = "Energy sub metering", xlab = "")
-legend("topright", pch = "___", col = c("black", "red", "blue"), legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+legend("topright", pch = "___", col = c("black", "red", "blue"), bty = "n", legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 plot(dataset$dt, as.numeric(dataset$Global_reactive_power), type = "l", ylab = "Global_reactive_power", xlab = "datetime")
 graphics.off()
